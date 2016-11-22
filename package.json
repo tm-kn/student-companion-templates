@@ -1,0 +1,25 @@
+{
+  "name": "student-companion-templates",
+  "version": "0.0.1",
+  "description": "Prototype templates for Student Companion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tm-kn/student-companion-templates.git"
+  },
+  "author": "OrangeHouse",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/tm-kn/student-companion-templates/issues"
+  },
+  "homepage": "https://github.com/tm-kn/student-companion-templates#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
