@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
-    <div
-    <header>
+    <header id="header">
       <div class="row">
         <div class="small-12 colums">
               <div class="small-offset-8 small-12 columns">
@@ -23,17 +22,24 @@
             </div>
             <div class="small-12 columns">
                 <div class="small-offset-3">
-                <h1>Student Companion</h1>
+                <h1 id="logo-text">Student Companion</h1>
               </div>
           </div>
         </div>
       </div>
-    </div>
+    </header>
+    <nav id="top-bar-navigation">
         <div class="top-bar">
           <div class="top-bar-left">
-            <ul class="menu">
+            <ul class="dropdown menu" data-dropdown-menu>
              <li><a href="dashboard.html">Home</a></li>
-              <li><a href="entertainment.html">Entertainment</a></li>
+              <li><a href="entertainment.html">Entertainment</a>
+                <ul class="menu vertical">
+                  <li><a href="#">One</a></li>
+                  <li><a href="#">Two</a></li>
+                  <li><a href="#">Three</a></li>
+                </ul>
+              </li>
               <li><a href="#">Huddersfield SU</a></li>
               <li><a href="useful_places.html">Useful Places</a></li>
               <li><a href="feedback.html">Feedback</a></li>
@@ -46,50 +52,51 @@
             </ul>
           </div>
         </div>
-    </header>
+    </nav>
+    <div id="content">
+      <div class="row">
+        <div class="large-6 columns">
+          <h2>Recently Saved Places</h2>
+          <ul class="no-bullet">
+            <li><a href="#">Recently Saved Places</a></li>
+            <li><a href="#">Recently Saved Places</a></li>
+            <li><a href="#">Recently Saved Places</a></li>
+          </ul>
+        </div>
 
-    <div class="row">
-      <div class="large-6 columns">
-        <h2>Recently Saved Places</h2>
-        <ul class="no-bullet">
-          <li><a href="#">Recently Saved Places</a></li>
-          <li><a href="#">Recently Saved Places</a></li>
-          <li><a href="#">Recently Saved Places</a></li>
-        </ul>
+        <div class="large-6 columns">
+          <h2>Trending Places</h2>
+          <ul class="no-bullet">
+            <li><a href="#">Trending Places</a></li>
+            <li><a href="#">Trending Places</a></li>
+            <li><a href="#">Trending Places</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="large-6 columns">
-        <h2>Trending Places</h2>
-        <ul class="no-bullet">
-          <li><a href="#">Trending Places</a></li>
-          <li><a href="#">Trending Places</a></li>
-          <li><a href="#">Trending Places</a></li>
-        </ul>
-      </div>
-    </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <h2>New Places</h2>
+          <ul class="no-bullet">
+            <li><a href="#">New Places</a></li>
+            <li><a href="#">New Places</a></li>
+            <li><a href="#">New Places</a></li>
+          </ul>
+        </div>
 
-    <div class="row">
-      <div class="large-6 columns">
-        <h2>New Places</h2>
-        <ul class="no-bullet">
-          <li><a href="#">New Places</a></li>
-          <li><a href="#">New Places</a></li>
-          <li><a href="#">New Places</a></li>
-        </ul>
-      </div>
-
-      <div class="large-6 columns">
-        <h2>Map View</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37841.114067266644!2d-1.813451072729535!3d53.64573061523024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487962132bcdb7bb%3A0x653c3a498c896a17!2sHuddersfield!5e0!3m2!1sen!2suk!4v1478861865549"
-        width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </ul>
+        <div class="large-6 columns">
+          <h2>Map View</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37841.114067266644!2d-1.813451072729535!3d53.64573061523024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487962132bcdb7bb%3A0x653c3a498c896a17!2sHuddersfield!5e0!3m2!1sen!2suk!4v1478861865549"
+          width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
       <div class="row">
         <div class="small-4 columns">
           <h3>Useful Links</h3>

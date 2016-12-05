@@ -1,0 +1,43 @@
+$header-background-color: #0047ab;
+$header-logo-text-color: #ffffff;
+
+body {
+  background-image: url('../images/bg.png');
+  background-repeat: repeat;
+}
+
+#content {
+    @include breakpoint(medium) {
+      width: 90%;
+    }
+
+    background-color: $body-background;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: rem-calc(50);
+    padding-bottom: rem-calc(50);
+}
+
+
+header#header {
+    background-color: $header-background-color;
+
+    & {
+      color: $header-logo-text-color;
+    }
+}
+
+
+#top-bar-navigation {
+  a {
+    color: $white;
+  }
+}
+
+footer#footer {
+  background-color: $black;
+
+  &, a {
+    color: $light-gray;
+  }
+}
