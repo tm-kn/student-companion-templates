@@ -1,12 +1,40 @@
+// Variables
 $header-background-color: #0047ab;
-$header-logo-text-color: #ffffff;
+$header-logo-text-color: $white;
 
+$footer-background-color: $black;
+$footer-text-color: $medium-gray;
+$body-background-image: url('../images/bg.png');
+
+
+
+// Body
 body {
-  background-image: url('../images/bg.png');
+  background-image: $body-background-image;
   background-repeat: repeat;
 }
 
-#content {
+
+// Header
+header#header {
+    background-color: $header-background-color;
+
+    & {
+      color: $header-logo-text-color;
+    }
+}
+
+
+// Navigation
+nav#top-bar-navigation {
+  a {
+    color: $white;
+  }
+}
+
+
+// Content
+div#content {
     @include breakpoint(medium) {
       width: 90%;
     }
@@ -19,26 +47,12 @@ body {
 }
 
 
-header#header {
-    background-color: $header-background-color;
-
-    & {
-      color: $header-logo-text-color;
-    }
-}
-
-
-#top-bar-navigation {
-  a {
-    color: $white;
-  }
-}
-
+// Footer
 footer#footer {
   padding: rem-calc(50);
-  background-color: $black;
+  background-color: $footer-background-color;
 
   &, a {
-    color: $light-gray;
+    color: $footer-text-color;
   }
 }
