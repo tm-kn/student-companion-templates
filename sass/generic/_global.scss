@@ -35,6 +35,7 @@ header#header {
 }
 
 footer#footer {
+  padding: rem-calc(50);
   background-color: $black;
 
   &, a {
