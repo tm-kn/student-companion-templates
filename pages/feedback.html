@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
-    <div
-    <header>
+    <header id="header">
       <div class="row">
         <div class="small-12 colums">
               <div class="small-offset-8 small-12 columns">
@@ -23,19 +22,25 @@
             </div>
             <div class="small-12 columns">
                 <div class="small-offset-3">
-                <h1>Student Companion</h1>
+                <h1 id="logo-text">Student Companion</h1>
               </div>
           </div>
         </div>
       </div>
-    </div>
+    </header>
+    <nav id="top-bar-navigation">
         <div class="top-bar">
           <div class="top-bar-left">
-            <ul class="menu">
+            <ul class="dropdown menu" data-dropdown-menu>
              <li><a href="dashboard.html">Home</a></li>
-              <li><a href="entertainment.html">Entertainment</a></li>
-              <li><a href="">Huddersfield SU</a></li>
-              <li><a href="useful_places.html">Useful Place</a></li>
+              <li><a href="entertainment.html">Entertainment</a>
+                <ul class="menu vertical">
+                  <li><a href="#">One</a></li>
+                  <li><a href="#">Two</a></li>
+                  <li><a href="#">Three</a></li>
+                </ul>
+              </li>
+              <li><a href="useful_places.html">Useful Places</a></li>
               <li><a href="feedback.html">Feedback</a></li>
             </ul>
           </div>
@@ -46,8 +51,8 @@
             </ul>
           </div>
         </div>
-    </header>
-
+    </nav>
+    <div id="content">
     <form>
       <div class="row">
         <div class="medium-8 columns">
@@ -85,19 +90,19 @@
     <input type="submit" class="button" value="Submit">
   </div>
   </div>
-
+</div>
 </div>
     </form>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
       <div class="row">
         <div class="small-4 columns">
-          <h3>Test</h3>
+          <h3>Useful Links</h3>
           <ul>
             <li><a href="#">Test link1</a></li>
-            <li><a href="#">Test link1</a></li>
-            <li><a href="#">Test link1</a></li>
+            <li><a href="#">Test link2</a></li>
+            <li><a href="#">Test link3</a></li>
           </ul>
         </div>
       </div>
